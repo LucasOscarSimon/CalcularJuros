@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
-namespace CalculaJuros.Extensions
+namespace CalculaJuros.API.Extensions
 {
     public static class ServiceExtensions
     {
