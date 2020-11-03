@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{60D827A0-61B0-41B0-BC54-6F4C9FD5AF43}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{96BE36D4-3480-4257-849E-9B3B082D97FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "calcula-juros", "calcula-juros", "{AD4EAC89-E654-4489-8105-E39A23681275}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "taxa-juros", "taxa-juros", "{4EBDB745-1A3C-457D-BCBF-526B3201AF7B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaxaJuros", "src\services\taxa-juros\TaxaJuros\TaxaJuros.csproj", "{7782B8BD-C510-42DE-A637-56AD6D51C76E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculaJuros", "src\services\calcula-juros\CalculaJuros\CalculaJuros.csproj", "{4D320E75-CF26-46A6-ABB3-A7507955B129}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E}.Debug|x64.Build.0 = Debug|Any CPU
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E}.Debug|x86.Build.0 = Debug|Any CPU
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E}.Release|x64.ActiveCfg = Release|Any CPU
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E}.Release|x64.Build.0 = Release|Any CPU
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E}.Release|x86.ActiveCfg = Release|Any CPU
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E}.Release|x86.Build.0 = Release|Any CPU
+		{4D320E75-CF26-46A6-ABB3-A7507955B129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D320E75-CF26-46A6-ABB3-A7507955B129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D320E75-CF26-46A6-ABB3-A7507955B129}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4D320E75-CF26-46A6-ABB3-A7507955B129}.Debug|x64.Build.0 = Debug|Any CPU
+		{4D320E75-CF26-46A6-ABB3-A7507955B129}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4D320E75-CF26-46A6-ABB3-A7507955B129}.Debug|x86.Build.0 = Debug|Any CPU
+		{4D320E75-CF26-46A6-ABB3-A7507955B129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D320E75-CF26-46A6-ABB3-A7507955B129}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D320E75-CF26-46A6-ABB3-A7507955B129}.Release|x64.ActiveCfg = Release|Any CPU
+		{4D320E75-CF26-46A6-ABB3-A7507955B129}.Release|x64.Build.0 = Release|Any CPU
+		{4D320E75-CF26-46A6-ABB3-A7507955B129}.Release|x86.ActiveCfg = Release|Any CPU
+		{4D320E75-CF26-46A6-ABB3-A7507955B129}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{96BE36D4-3480-4257-849E-9B3B082D97FB} = {60D827A0-61B0-41B0-BC54-6F4C9FD5AF43}
+		{AD4EAC89-E654-4489-8105-E39A23681275} = {96BE36D4-3480-4257-849E-9B3B082D97FB}
+		{4EBDB745-1A3C-457D-BCBF-526B3201AF7B} = {96BE36D4-3480-4257-849E-9B3B082D97FB}
+		{7782B8BD-C510-42DE-A637-56AD6D51C76E} = {4EBDB745-1A3C-457D-BCBF-526B3201AF7B}
+		{4D320E75-CF26-46A6-ABB3-A7507955B129} = {AD4EAC89-E654-4489-8105-E39A23681275}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AB31289-B0E3-4ED0-BC8A-EFA248B57D7F}
+	EndGlobalSection
+EndGlobal

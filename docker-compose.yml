@@ -1,0 +1,40 @@
+version: "3.4"
+
+networks:
+  calculajuros:
+    driver: bridge
+
+volumes:
+  database:
+
+services:
+  
+  calculajurosapi:
+    hostname: "calculajurosapi"
+    image: calculajurosapi
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - TZ=America/Sao_Paulo
+    build:
+      context: .
+      dockerfile: src/services/calcula-juros/CalculaJuros/Dockerfile
+    ports:
+      - "5008:80"
+    networks:
+      - calculajuros
+
+  taxajurosapi:
+    hostname: "taxajurosapi"
+    image: taxajurosapi
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - TZ=America/Sao_Paulo
+    build:
+      context: .
+      dockerfile: src/services/taxa-juros/TaxaJuros/Dockerfile
+    ports:
+      - "5009:80"
+    networks:
+      - calculajuros
